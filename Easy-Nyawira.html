@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nyawira Jquery Quiz</title>
+	<style type="text/css">
+.rectangle1 {
+    
+    width: 280px;
+    height: 280px;
+    text-align: center;
+    border: 2px solid green;
+    margin: 3px;
+    font-size: 14px;
+    margin: 20px 20px;
+  }
+
+.rectangle2 {
+    
+    width: 240px;
+    height: 240px;
+    text-align: center;
+    border: 2px solid green;
+    margin: 3px;
+    font-size: 14px;
+    margin: 20px 20px;
+  }
+
+.rectangle3 {
+    
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    border: 2px solid green;
+    margin: 3px;
+    font-size: 14px;
+    margin: 20px 20px;
+  }
+
+.rectangle4 {
+    
+    width: 160px;
+    height: 160px;
+    text-align: center;
+    border: 2px solid green;
+    margin: 3px;
+    font-size: 14px;
+    margin: 20px 20px 20px 20px;
+  }
+
+.rectangle5 {
+    background-color: #bca;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    border: 2px solid green;
+    margin: 3px;
+    font-size: 14px;
+    margin: 20px 20px 20px 20px;
+  }
+
+	</style>
+
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+<button id="btn1"> 1</button>
+<button id="btn2"> 2</button>
+<button id="btn3"> 3</button>
+<button id="btn4"> 4</button>
+<button id="btn5"> 5</button>
+<button id= "clickme">Clear/Appear</button>
+
+<div class="rectangle1" alt = "jQuery">
+	<div class="rectangle2">
+	<div class = "rectangle3">
+	<div class="rectangle4">
+	<div class="rectangle5">
+	</div>
+		</div>
+			</div>
+				</div>
+					</div>
+    <div class = "log"></div>
+
+
+<script type="text/javascript">
+
+var next_move = "shrink";
+$( document ).ready(function() {
+
+$( "#btn1" ).click(function() {
+    
+
+    console.log(next_move);
+         var css = {};
+         if (next_move == "shrink") {
+            $(".rectangle1").animate({
+        width: "-=100px" , height: "-=100px" 
+        }, { duration: 500, queue: false });
+            $(".rectangle2").animate({
+        width: "-=100px" , height: "-=100px" 
+        }, { duration: 500, queue: false });
+            $(".rectangle3").animate({
+        width: "-=100px" , height: "-=100px" 
+        }, { duration: 500, queue: false });
+             $(".rectangle4").animate({
+        width: "-=100px" , height: "-=100px" 
+        }, { duration: 500, queue: false });
+             $(".rectangle5").animate({
+        width: "-=100px" , height: "-=100px" 
+        }, { duration: 500, queue: false });
+
+
+             next_move = "expand";
+         } 
+         else {
+            $(".rectangle1").animate({
+        width: "+=100px" , height: "+=100px" 
+        }, { duration: 500, queue: false });
+            $(".rectangle2").animate({
+        width: "+=100px" , height: "+=100px" 
+        }, { duration: 500, queue: false });
+            $(".rectangle3").animate({
+        width: "+=100px" , height: "+=100px" 
+        }, { duration: 500, queue: false });
+             $(".rectangle4").animate({
+        width: "+=100px" , height: "+=100px" 
+        }, { duration: 500, queue: false });
+             $(".rectangle5").animate({
+        width: "+=100px" , height: "+=100px" 
+        }, { duration: 500, queue: false });
+
+             console.log('hi');
+             next_move = "shrink";
+         }
+         
+        });
+
+  
+ $( "#btn2" ).click(function() {
+	
+
+
+    console.log(next_move);
+         var css = {};
+         if (next_move == "shrink") {
+            $(".rectangle2").animate({
+        width: "-=100px" , height: "-=100px" 
+        }, { duration: 500, queue: false });
+            $(".rectangle3").animate({
+        width: "-=100px" , height: "-=100px" 
+        }, { duration: 500, queue: false });
+             $(".rectangle4").animate({
+        width: "-=100px" , height: "-=100px" 
+        }, { duration: 500, queue: false });
+             $(".rectangle5").animate({
+        width: "-=100px" , height: "-=100px" 
+        }, { duration: 500, queue: false });
+
+
+             next_move = "expand";
+         } 
+         else {
+            $(".rectangle2").animate({
+        width: "+=100px" , height: "+=100px" 
+        }, { duration: 500, queue: false });
+            $(".rectangle3").animate({
+        width: "+=100px" , height: "+=100px" 
+        }, { duration: 500, queue: false });
+             $(".rectangle4").animate({
+        width: "+=100px" , height: "+=100px" 
+        }, { duration: 500, queue: false });
+             $(".rectangle5").animate({
+        width: "+=100px" , height: "+=100px" 
+        }, { duration: 500, queue: false });
+
+             console.log('hi');
+             next_move = "shrink";
+         }
+         
+        });
+
+
+$( "#btn3" ).click(function() {
+	
+
+    console.log(next_move);
+         var css = {};
+         if (next_move == "shrink") {
+            $(".rectangle3").animate({
+        width: "-=100px" , height: "-=100px" 
+        }, { duration: 500, queue: false });
+             $(".rectangle4").animate({
+        width: "-=100px" , height: "-=100px" 
+        }, { duration: 500, queue: false });
+             $(".rectangle5").animate({
+        width: "-=100px" , height: "-=100px" 
+        }, { duration: 500, queue: false });
+
+
+             next_move = "expand";
+         } 
+         else {
+            $(".rectangle3").animate({
+        width: "+=100px" , height: "+=100px" 
+        }, { duration: 500, queue: false });
+             $(".rectangle4").animate({
+        width: "+=100px" , height: "+=100px" 
+        }, { duration: 500, queue: false });
+             $(".rectangle5").animate({
+        width: "+=100px" , height: "+=100px" 
+        }, { duration: 500, queue: false });
+
+             console.log('hi');
+             next_move = "shrink";
+         }
+         
+        });
+
+$( "#btn4" ).click(function() {
+
+    console.log(next_move);
+         var css = {};
+         if (next_move == "shrink") {
+             $(".rectangle4").animate({
+        width: "-=100px" , height: "-=100px" 
+        }, { duration: 500, queue: false });
+             $(".rectangle5").animate({
+        width: "-=100px" , height: "-=100px" 
+        }, { duration: 500, queue: false });
+
+
+             next_move = "expand";
+         } 
+         else {
+             $(".rectangle4").animate({
+        width: "+=100px" , height: "+=100px" 
+        }, { duration: 500, queue: false });
+             $(".rectangle5").animate({
+        width: "+=100px" , height: "+=100px" 
+        }, { duration: 500, queue: false });
+
+             console.log('hi');
+             next_move = "shrink";
+         }
+         
+        });
+
+
+$( "#btn5" ).click(function() {
+     console.log(next_move);
+         var css = {};
+         if (next_move == "shrink") {
+             $(".rectangle5").animate({
+        width: "-=100px" , height: "-=100px" 
+        }, { duration: 500, queue: false });
+
+             next_move = "expand";
+         } 
+         else {
+             $(".rectangle5").animate({
+        width: "+=100px" , height: "+=100px" 
+        }, { duration: 500, queue: false });
+
+             console.log('hi');
+             next_move = "shrink";
+         }
+
+        });
+
+
+        
+$("#clickme").click(function(event){
+     $(".rectangle1").toggle('slow', function(){
+     $(".log").text( "Surprise!! :)" );
+     });
+     });
+});
+
+
+</script>
+</body>
+
+</html>
